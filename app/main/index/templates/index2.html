@@ -1,0 +1,4 @@
+{% for book in books %}
+<p>{{book.image}}</p>
+<img src="{{ url_for("static", filename='books_image/' + book.image) }}">
+{% endfor %}
